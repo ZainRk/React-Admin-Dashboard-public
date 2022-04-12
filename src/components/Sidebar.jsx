@@ -1,41 +1,44 @@
-import React from 'react'
-import './Sidebar.css'
-import Logo from '../imgs/logo.png'
-import {UilEstate, UilClipboardAlt, UilUsersAlt, UilPackage, UilChart, UilSignOutAlt} from '@iconscout/react-unicons'
+import React, { useState } from "react";
+import "./Sidebar.css";
+import Logo from "../imgs/logo.png";
+import { UilSignOutAlt } from "@iconscout/react-unicons";
+import { SidebarData } from "../Data/Data";
+import {  motion } from "framer-motion";
 const Sidebar = () => {
+  const [selected, setSelected] = useState(0);
+
   return (
     <div className="sidebar">
-        <div className="logo">
-            <img src={Logo} alt="logo"/>
-            <span>Sh<span>o</span>ps</span>
-        </div>
+      {/* logo */}
+      <div className="logo">
+        <img src={Logo} alt="logo" />
+        <span>
+          Sh<span>o</span>ps
+        </span>
+      </div>
+
+      {/* menu */}
         <div className="menu">
-            <div className="menuItem active">
-                <UilEstate/>
-                <span>Dashboard</span>
-            </div>
-            <div className="menuItem">
-                <UilClipboardAlt/>
-                <span>Orders</span>
-            </div>
-            <div className="menuItem">
-                <UilUsersAlt/>
-                <span>Customers</span>
-            </div>
-            <div className="menuItem">
-                <UilPackage/>
-                <span>Products</span>
-            </div>
-            <div className="menuItem">
-                <UilChart/>
-                <span>Analytics</span>
-            </div>
-            <div className="menuItem">
-                <UilSignOutAlt/>
-            </div>
+          {SidebarData.map((item, index) => {
+            return (
+              <div
+                className={selected === index ? "menuItem active" : "menuItem"}
+                key={index}
+                onClick={() => setSelected(index)}
+                layout
+              >
+                <item.icon />
+                <span>{item.heading}</span>
+              </div>
+            );
+          })}
+          {/* signoutIcon */}
+          <div className="menuItem">
+            <UilSignOutAlt />
+          </div>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
