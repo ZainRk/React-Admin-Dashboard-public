@@ -1,10 +1,15 @@
-.card {
+.CompactCard {
     display: flex;
     flex: 1;
     height: 7rem !important;
     border-radius: 0.7rem;
     color: white;
     padding: 1rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .CompactCard:hover{
+    box-shadow: none!important;
   }
   
   /* radial bar */
@@ -53,3 +58,40 @@
     font-size: 12px;
   }
   
+
+
+
+
+  /* ExpandedCard */
+.ExpandedCard{
+  position: absolute;
+  width: 60%;
+  height: 70vh;
+  z-index: 9;
+  left: 13rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.ExpandedCard>span:nth-of-type(1)
+{
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px white;
+}
+.ExpandedCard>span:nth-of-type(2)
+{
+  color: rgb(236, 236, 236);
+  font-size: 15px;
+}
+
+
+
+.chartContainer{
+  width: 70%;
+}
+
