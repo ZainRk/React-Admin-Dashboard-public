@@ -3,5 +3,21 @@
   gap: 10px;
 }
 .parentContainer{
-    flex: 1;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .Cards{
+    flex-direction: column;
+  }
+  .parentContainer{
+    height: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .Cards{
+    width: 90%;
+  }
 }
