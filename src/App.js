@@ -1,15 +1,20 @@
-import './App.css'
-import MainDash from './components/MainDash/MainDash';
-import RightSide from './components/RigtSide/RightSide';
-import Sidebar from './components/Sidebar';
+import "./App.css";
+import React from "react";
+// import axios from "axios";
+
+import MainDash from "./components/MainDash/MainDash";
+// import RightSide from "./components/RigtSide/RightSide";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <div className="App">
       <div className="AppGlass">
-        <Sidebar/>
-        <MainDash/>
-        <RightSide/>
+        <Sidebar />
+        <MainDash />
+        {/* <RightSide/> */}
+
+        {/* <h1>{if(message){}}</h1> */}
       </div>
     </div>
   );
