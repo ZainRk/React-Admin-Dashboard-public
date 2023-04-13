@@ -25,20 +25,20 @@ export const SidebarData = [
   },
   {
     icon: UilClipboardAlt,
-    heading: "Orders",
+    heading: "Attendance",
   },
   {
     icon: UilUsersAlt,
-    heading: "Customers",
+    heading: "Employees",
   },
-  {
-    icon: UilPackage,
-    heading: "Products",
-  },
-  {
-    icon: UilChart,
-    heading: "Analytics",
-  },
+  // {
+  //   icon: UilPackage,
+  //   heading: "Products",
+  // },
+  // {
+  //   icon: UilChart,
+  //   heading: "Analytics",
+  // },
 ];
 
 // Analytics Cards Data
@@ -60,7 +60,7 @@ export const cardsData = [
     ],
   },
   // Data for cards that have stats
-  
+
   // {
   //   title: "Revenue",
   //   color: {
