@@ -33,11 +33,11 @@ export const SidebarData = [
   },
   {
     icon: UilPackage,
-    heading: 'Products'
+    heading: "Products",
   },
   {
     icon: UilChart,
-    heading: 'Analytics'
+    heading: "Analytics",
   },
 ];
 
@@ -98,20 +98,20 @@ export const cardsData = [
 export const UpdatesData = [
   {
     img: img1,
-    name: "Andrew Thomas",
-    noti: "has ordered Apple smart watch 2500mh battery.",
-    time: "25 seconds ago",
+    name: "ATM 001",
+    noti: "Estado crítico de Integridade, enviando relatório no gestor!",
+    time: "25 segundos atrás",
   },
   {
     img: img2,
-    name: "James Bond",
-    noti: "has received Samsung gadget for charging battery.",
-    time: "30 minutes ago",
+    name: "ATM 021",
+    noti: "Sem dinheiro e sem Papel, enviando relatório ao gestor!",
+    time: "30 minutos atrás",
   },
   {
     img: img3,
-    name: "Iron Man",
-    noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
-    time: "2 hours ago",
+    name: "ATM 002",
+    noti: "Sem Sistema, enviando relatório ao gestor!.",
+    time: "2 segundos atrás",
   },
 ];
