@@ -5,7 +5,7 @@ import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
-
+import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
 
@@ -30,26 +30,27 @@ const Sidebar = () => {
     animate={window.innerWidth<=768?`${expanded}`:''}
     >
       {/* logo */}
-      <div className="logo">
+      {/* <div className="logo">
         <img src={Logo} alt="logo" />
         <span>
           Sh<span>o</span>ps
         </span>
-      </div>
+      </div> */}
 
-      <div className="menu">
-        {SidebarData.map((item, index) => {
-          return (
-            <div
-              className={selected === index ? "menuItem active" : "menuItem"}
-              key={index}
-              onClick={() => setSelected(index)}
-            >
-              <item.icon />
-              <span>{item.heading}</span>
-            </div>
-          );
-        })}
+<div className="menu">
+        {SidebarData.map((item, index) => (
+         <NavLink
+         to={item.path}
+         key={index}
+         className={({ isActive }) =>
+           isActive ? 'menuItem active' : 'menuItem'
+         }
+         style={{ textDecoration: 'none' }} 
+       >
+         <item.icon />
+         <span>{item.heading}</span>
+       </NavLink>
+        ))}
         {/* signoutIcon */}
         <div className="menuItem">
           <UilSignOutAlt />
