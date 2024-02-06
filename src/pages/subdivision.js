@@ -1,12 +1,7 @@
 import React from 'react';
-import Table from "../components/Table/SubdivisionTable"
-import SubdivisionTable from '../components/Table/SubdivisionTable';
+
 function SubdivisionPage() {
-  return (
-    <div>This is the Subdivision page</div>,
-    <SubdivisionTable/>
-  );
-    
+  return <div>This is the Subdivision page</div>;
 }
 
 export default SubdivisionPage;
