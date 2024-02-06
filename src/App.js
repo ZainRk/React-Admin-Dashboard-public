@@ -10,6 +10,7 @@ import SubdivisionPage from './pages/subdivision';
 import AnalyticPage from './pages/analytic';
 import CustomerPage from './pages/customer';
 import OrdersPage from './pages/order';
+import ProjectPage from './pages/project';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/orders" element={<OrdersPage />} />
             <Route path="/customers" element={<CustomerPage />} />
             <Route path="/subdivisions" element={<SubdivisionPage />} />
+            <Route path="/projects" element={<ProjectPage />} />
             <Route path="/analytics" element={<AnalyticPage />} />
           </Routes>
           <RightSide />
