@@ -7,7 +7,11 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./Table.css";
+// import { ObjectId } from "mongodb"; 
 
+function createSubdivisionData(_id, subdivision_name, location, insert_date, update_date, quantityVilla, status, project_id, villas) {
+  return { _id, subdivision_name, location, insert_date, update_date, quantityVilla, status, project_id, villas };
+}
 function createData(name, trackingId, date, status) {
   return { name, trackingId, date, status };
 }
