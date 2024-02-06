@@ -35,10 +35,16 @@ export const SidebarData = [
     heading: "Customers",
   },
   { 
+    path: '/projects',
+    icon: UilPackage,
+    heading: 'Projects'
+  },
+  { 
     path: '/subdivisions',
     icon: UilPackage,
     heading: 'Subdivisions'
   },
+  
   { 
     path: '/analytics',
     icon: UilChart,
