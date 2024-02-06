@@ -114,5 +114,14 @@
   .close{
     left: -60%;
   }
+  .menuItem {
+    text-decoration: none; 
+    color: inherit; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+   
+  }
 }
 
